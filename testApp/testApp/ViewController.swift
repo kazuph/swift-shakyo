@@ -9,17 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myLabel2: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        myLabel.text = "こんにちは、世界！";
+        myLabel2.text = "\(NSDate())";
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func pushMyButton(sender: AnyObject) {
+        var myAlert = UIAlertController(title: "たいとる", message: "めっさげ", preferredStyle: .Alert)
+        let OKAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        myAlert.addAction(OKAction)
+        presentViewController(myAlert, animated: true, completion: nil)
+    }
 }
 

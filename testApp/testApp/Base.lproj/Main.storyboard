@@ -21,6 +21,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushMyButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lzM-Rq-rfP"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eXh-Gg-lXJ">
                                 <rect key="frame" x="252" y="279" width="97" height="30"/>
@@ -30,15 +33,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpd-aO-RcQ">
+                                <rect key="frame" x="205" y="191" width="190" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="CC7-wO-yOb"/>
+                                    <constraint firstAttribute="height" constant="28" id="zBA-5m-4MP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBh-Xd-BYL">
+                                <rect key="frame" x="174" y="227" width="253" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HBh-Xd-BYL" firstAttribute="leading" secondItem="Tpd-aO-RcQ" secondAttribute="leading" id="3wD-lM-ODX"/>
+                            <constraint firstItem="HBh-Xd-BYL" firstAttribute="trailing" secondItem="Tpd-aO-RcQ" secondAttribute="trailing" id="AHx-BC-gPF"/>
+                            <constraint firstItem="Tpd-aO-RcQ" firstAttribute="centerX" secondItem="eXh-Gg-lXJ" secondAttribute="centerX" id="OyS-EN-UF8"/>
+                            <constraint firstItem="eXh-Gg-lXJ" firstAttribute="top" secondItem="Tpd-aO-RcQ" secondAttribute="bottom" constant="60" id="PPb-cT-zm5"/>
                             <constraint firstItem="BF5-jC-QDQ" firstAttribute="top" secondItem="eXh-Gg-lXJ" secondAttribute="bottom" constant="43" id="PeP-Ao-HT2"/>
                             <constraint firstItem="eXh-Gg-lXJ" firstAttribute="centerX" secondItem="BF5-jC-QDQ" secondAttribute="centerX" id="St7-JN-mLj"/>
                             <constraint firstItem="BF5-jC-QDQ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="p4K-Pi-DiE"/>
+                            <constraint firstItem="eXh-Gg-lXJ" firstAttribute="top" secondItem="HBh-Xd-BYL" secondAttribute="bottom" constant="17" id="pVy-S5-F5s"/>
+                            <constraint firstItem="HBh-Xd-BYL" firstAttribute="top" secondItem="Tpd-aO-RcQ" secondAttribute="bottom" constant="15" id="sxQ-w2-mqL"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="BF5-jC-QDQ" secondAttribute="bottom" constant="218" id="wuj-Pq-5Yg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Tpd-aO-RcQ" id="KWt-ZQ-0cl"/>
+                        <outlet property="myLabel2" destination="HBh-Xd-BYL" id="kAh-ZU-SbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
