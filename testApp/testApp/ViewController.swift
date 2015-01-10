@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         view.addSubview(mySwitch)
         
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.performSegueWithIdentifier("mySegue", sender: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -33,5 +37,9 @@ class ViewController: UIViewController {
         myAlert.addAction(OKAction)
         presentViewController(myAlert, animated: true, completion: nil)
     }
+    
+    @IBAction func backButton(segue: UIStoryboardSegue) {
+    }
+    
 }
 

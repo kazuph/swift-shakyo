@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1BEE641A6143A800D8B776 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1BEE631A6143A800D8B776 /* SubViewController.swift */; };
 		FCEA757F1A611BD100940C77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA757E1A611BD100940C77 /* AppDelegate.swift */; };
 		FCEA75811A611BD100940C77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEA75801A611BD100940C77 /* ViewController.swift */; };
 		FCEA75841A611BD100940C77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCEA75821A611BD100940C77 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC1BEE631A6143A800D8B776 /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		FCEA75791A611BD100940C77 /* testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEA757D1A611BD100940C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCEA757E1A611BD100940C77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				FCEA757E1A611BD100940C77 /* AppDelegate.swift */,
 				FCEA75801A611BD100940C77 /* ViewController.swift */,
+				FC1BEE631A6143A800D8B776 /* SubViewController.swift */,
 				FCEA75821A611BD100940C77 /* Main.storyboard */,
 				FCEA75851A611BD100940C77 /* Images.xcassets */,
 				FCEA75871A611BD100940C77 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1BEE641A6143A800D8B776 /* SubViewController.swift in Sources */,
 				FCEA75811A611BD100940C77 /* ViewController.swift in Sources */,
 				FCEA757F1A611BD100940C77 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				FCEA759A1A611BD100940C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCEA759B1A611BD100940C77 /* Build configuration list for PBXNativeTarget "testAppTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				FCEA759D1A611BD100940C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
