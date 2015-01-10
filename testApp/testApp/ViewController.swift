@@ -15,8 +15,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myLabel.text = "こんにちは、世界！";
-        myLabel2.text = "\(NSDate())";
+        myLabel.text = "こんにちは、世界！"
+        myLabel2.text = "\(NSDate())"
+        
+        var mySwitch = UISwitch()
+        view.addSubview(mySwitch)
         
     }
 
