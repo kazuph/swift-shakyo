@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.performSegueWithIdentifier("mySegue", sender: nil)
+//        self.performSegueWithIdentifier("mySegue", sender: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +38,12 @@ class ViewController: UIViewController {
         presentViewController(myAlert, animated: true, completion: nil)
     }
     
+    @IBAction func getData(sender: AnyObject) {
+        OpenWeatherMap.getJSON({(data:[String]) -> Void in
+            println("get data end!")
+            println(data)
+        })
+    }
     @IBAction func backButton(segue: UIStoryboardSegue) {
     }
     

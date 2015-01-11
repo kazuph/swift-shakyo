@@ -147,6 +147,24 @@ func myFunc(val:Int, str2:String)->Int{
 myFunc(12, "42")
 myFunc(12, "A")
 
+// clojureの省略記法について
+var anArray = [3, 4, 7, 4, 5, 8, 9, 7, 1]
+anArray.sort({ (s1: Int, s2: Int) -> Bool in
+    return s1 < s2
+})
+anArray.sort({ s1, s2 in
+    return s1 < s2
+})
+anArray.sort({ s1, s2 in s1 < s2 })
+anArray.sort({ $0 < $1 })
+anArray.sort(<)
+
+// 再帰
+var fib: (Int -> Int)!
+fib = { (n: Int) -> Int in
+    return n < 2 ? n : fib(n - 1) + fib(n - 2)
+}
+fib(11)
 
 
 
